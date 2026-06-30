@@ -19,7 +19,6 @@ export type OrderItem = {
 }
 
 //tabel
-
 export const categories = pgTable('categories', {
     id: serial('id').primaryKey(),
     name: text('name').notNull(),
@@ -76,6 +75,8 @@ export const admins = pgTable('admins', {
     passwordHash: text('password_hash').notNull(),
     createdAt: timestamp('created_at').defaultNow(),
 })
+
+//relasi
 
 export const categoriesRelations = relations(categories, ({ many }) => ({ products: many(products), }))
 

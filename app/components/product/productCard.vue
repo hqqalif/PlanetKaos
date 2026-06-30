@@ -103,8 +103,6 @@
                     <p>Biaya Ongkir: {{ shipping }}</p>
                 </div>
             </div>
-        <reviewForm @review-submitted="addReview"></reviewForm>
-        <reviewList :reviews="reviews"></reviewList>
         </div>
     </div>
 </template>
