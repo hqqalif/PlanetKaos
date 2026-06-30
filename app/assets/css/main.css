@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-dark: #1a1f3c;
+    --color-brand-blue: #243D89;
+    --color-brand-red: #e63946;
+    --color-brand-light: #f8f9fa;
+
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #e5e7e9;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.disabledBtn {
+    background-color: #6d7588 !important;
+    cursor: not-allowed !important;
+    color: white !important;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.logo {
+    color: #03ac0e;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.searchBar {
+    flex-grow: 1;
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e5e7e9;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.searchBar input:focus {
+    border-color: #03ac0e;
+}
+
+.headerButton {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    padding: 5px;
+    width: auto;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1.3rem;
+}
