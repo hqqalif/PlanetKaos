@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { ref} from 'vue'
+  import { ref } from 'vue'
   import productCard from '@/components/product/productCard.vue'
 
   const cart = ref(0)

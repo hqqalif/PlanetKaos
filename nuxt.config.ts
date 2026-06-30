@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     databaseUrl: process.env.DATABASE_URL || '',
-    jwtSecret: process.env.JWT_SECRET || 'dev-secret-fallback',
+    jwtSecret: process.env.JWT_SECRET || 'dev-secret',
     public: {
       appName: 'PlanetKaos',
     },
@@ -29,9 +29,9 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap'
-        }
-      ]
-    }
-  }
+          href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap',
+        },
+      ],
+    },
+  },
 })

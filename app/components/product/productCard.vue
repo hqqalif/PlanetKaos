@@ -1,7 +1,8 @@
 <script setup lang="ts">
     import {ref, computed} from 'vue'
-    import reviewForm from '@/components/product/reviewForm.vue'
-    import reviewList from '@/components/product/reviewList.vue'
+    //import reviewForm from '@/components/product/reviewForm.vue'
+    //import reviewList from '@/components/product/reviewList.vue'
+
     const brand = ref('Nike')
     const kaosHitam = ref('/images/products/images (1).jpg')
     const kaosOlive = ref('/images/products/images (2).jpg')
